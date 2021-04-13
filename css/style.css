@@ -1,0 +1,56 @@
+/* This Stylesheet Will Include General Style Regulations */
+
+/* Section CSS */
+#sectionAbout {width: 100vw;height: 100vh;}
+#sectionAbout h1 {font-size: 72px;}
+
+/* Additional Backgrounds */
+.bg-low-opacity {background: rgba(0, 0, 0, 0.1);}
+.bg-fancy {background-image: linear-gradient( 44.8deg,  rgba(255,136,102,0.67) -53.1%, rgba(255,221,136,0.28) 49% );}
+
+/* Filters */
+.img-dark {filter: brightness(0.5);}
+
+/* Navbar Settings */
+nav a {font-weight: 500; letter-spacing: 5px;}
+nav a:hover{text-decoration: underline;}
+
+/* Font Colors */
+
+.font-color-darkgrey {color: #204056;}
+
+/* Button Settings */
+.btn-gradred {background-image: radial-gradient( circle 830px at 95.6% -5%,  rgba(244,89,128,1) 0%, rgba(223,23,55,1) 90% );}
+.btn-gradred:hover{background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,192,0,1) 0%, rgba(246,214,0,1) 62.5% );}
+
+/* Horizontal Row Settings */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 5px solid #204056;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .65em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .65em;
+}
+
+/* CSS Media Query */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+    .carousel-inner button {display: none;}
+
+    #sectionAbout h1 {font-size: xx-large;}
+}
